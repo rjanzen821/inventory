@@ -1,11 +1,11 @@
-<h1>Listing resources</h1>
+<h1>Here is a Listing of your resources</h1>
 
 <table>
   <tr>
     <th>Resource type</th>
     <th>Make</th>
     <th>Model</th>
-    <th>Purchased at</th>
+    <th>.....Purchased on.....</th>
     <th>Serial number</th>
     <th>Location</th>
     <th>User names</th>
@@ -21,7 +21,7 @@
     <td><%= resource.resource_type %></td>
     <td><%= resource.make %></td>
     <td><%= resource.model %></td>
-    <td><%= resource.purchased_at %></td>
+    <td><%= resource.purchased_at.strftime("%m/%d/%Y") %></td>
     <td><%= resource.serial_number %></td>
     <td><%= resource.location_id %></td>
     <td><%= resource.user_names %></td>
@@ -36,4 +36,4 @@
 
 <br />
 
-<%= link_to 'New Resource', new_resource_path %>
+<%= link_to 'Add resource', new_resource_path, :class => "button" %>
