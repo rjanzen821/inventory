@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  resource_type: MyString
+  make: MyString
+  model: MyString
+  purchased_at: 2012-09-11 21:17:16
+  serial_number: MyString
+  location_id: 1
+  user_names: MyString
+  salvage: MyString
+  value: 1
+
+two:
+  resource_type: MyString
+  make: MyString
+  model: MyString
+  purchased_at: 2012-09-11 21:17:16
+  serial_number: MyString
+  location_id: 1
+  user_names: MyString
+  salvage: MyString
+  value: 1
