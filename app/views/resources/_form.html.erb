@@ -25,7 +25,7 @@
   </div>
   <div class="field">
     <%= f.label :purchased_at %><br />
-    <%= f.datetime_select :purchased_at %>
+    <%= f.date_select :purchased_at %>
   </div>
   <div class="field">
     <%= f.label :serial_number %><br />
@@ -33,7 +33,7 @@
   </div>
   <div class="field">
     <%= f.label :location_id %><br />
-    <%= f.number_field :location_id %>
+    <%= f.select (:location_id, @locations.collect {|p| [ p.name, p.id ] }) %>
   </div>
   <div class="field">
     <%= f.label :user_names %><br />
